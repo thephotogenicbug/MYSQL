@@ -1,0 +1,8 @@
+
+-- LIMIT CLAUSE
+SELECT * FROM employee
+LIMIT 2;
+
+-- ORDER BY CLAUSE
+SELECT * FROM employee
+ORDER BY salary DESC;
