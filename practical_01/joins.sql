@@ -78,7 +78,43 @@ SELECT *
 FROM customer
 CROSS JOIN orders;
 
--- SELF JOIN
+-- EXCLUSIVE JOINS
+
+-- LEFT Exc Join
+SELECT *
+FROM customer
+LEFT JOIN  orders
+ON customer.id = orders.id
+WHERE orders.id IS NULL;
+
+-- RIGHT Exc Join
+SELECT *
+FROM customer
+RIGHT JOIN orders
+ON customer.id = orders.id
+WHERE customer.id IS NULL;
+
+-- FULL Exc Join
+SELECT *
+FROM customer
+LEFT JOIN  orders
+ON customer.id = orders.id
+WHERE orders.id IS NULL
+UNION
+SELECT *
+FROM customer
+RIGHT JOIN orders
+ON customer.id = orders.id
+WHERE customer.id IS NULL;
+
+
+
+
+
+
+
+
+
 
 
 
