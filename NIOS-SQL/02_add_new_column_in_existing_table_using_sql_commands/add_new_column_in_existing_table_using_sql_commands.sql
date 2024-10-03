@@ -1,0 +1,5 @@
+
+ALTER TABLE learner
+ADD DOB DATE;
+
+SELECT * FROM learner;

@@ -1,0 +1,6 @@
+
+
+ALTER TABLE learner
+DROP COLUMN DOB;
+
+SELECT * FROM learner;

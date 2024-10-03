@@ -1,0 +1,7 @@
+
+
+ALTER TABLE learner
+MODIFY
+Name VARCHAR(40);
+
+SELECT * FROM learner;
