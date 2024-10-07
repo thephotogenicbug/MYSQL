@@ -11,3 +11,5 @@ Name         CHAR(30),
 Address      VARCHAR(50)
 );
 
+-- Show table name structure
+DESC learner;
